@@ -1,5 +1,9 @@
 # GreenLink - Conéctate a un mundo más verde!
 
+<p align="center">
+  <img src="img/logo.png" alt="Logo GreenLink" width="150">
+</p>
+
 **GreenLink** es un proyecto educativo desarrollado para el grado de **Desarrollo de Aplicaciones Multiplataforma (1º DAM)**. Se trata de una plataforma web diseñada para eliminar intermediarios en la cadena de suministro agrícola, permitiendo una comunicación directa y justa entre el agricultor y el ciudadano.
 
 ## 🚀 Objetivo del Proyecto
