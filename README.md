@@ -18,6 +18,7 @@ El propósito principal es fomentar el consumo de proximidad y la transparencia 
 * `index.html`: Página principal con información corporativa y productos destacados.
 * `producto.html`: Plantilla de detalle técnico de producto, ficha del agricultor y control de compra.
 * `quienes-somos.html`: Sección institucional con la misión, problemáticas e integración con el Pacto Verde Europeo.
+* `login.html`: Sección de Registro/Inicio de Sesión de los usuarios.
 * `styles.css`: Hoja de estilos unificada para todo el sitio.
 * `script.js`: Lógica de programación para la funcionalidad del lado del cliente.
 * `/img`: Carpeta de recursos gráficos y fotografías de productos.
