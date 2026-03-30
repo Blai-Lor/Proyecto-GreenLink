@@ -16,7 +16,7 @@ El propósito principal es fomentar el consumo de proximidad y la transparencia 
 * **HTML5:** Estructura semántica de la plataforma.
 * **CSS3:** Diseño responsivo, uso de Flexbox y Grid Layout.
 * **JavaScript (ES6+):** Implementación de interactividad, validación de formularios y gestión dinámica del carrito de compras.
-* **Recursos multimedia:** Optimización de imágenes y uso de IFrames para contenido externo.
+* **Recursos multimedia:** Optimización de imágenes.
 
 ## 📂 Estructura del Repositorio
 * `index.html`: Página principal con información corporativa y productos destacados.
