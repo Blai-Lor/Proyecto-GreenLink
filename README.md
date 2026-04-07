@@ -6,7 +6,7 @@
 
 **GreenLink** es un proyecto educativo desarrollado para el grado de **Desarrollo de Aplicaciones Multiplataforma (1º DAM)**. Se trata de una plataforma web diseñada para eliminar intermediarios en la cadena de suministro agrícola, permitiendo una comunicación directa y justa entre el agricultor y el ciudadano.
 
-## 🚀 Objetivo del Proyecto
+## Objetivo del Proyecto
 El propósito principal es fomentar el consumo de proximidad y la transparencia alimentaria, alineándose con los objetivos del **Pacto Verde Europeo**. La web permite a los usuarios:
 * Comprar productos frescos directamente desde la finca.
 * Conocer las instalaciones del productor mediante galerías de fotos verificadas.
