@@ -27,7 +27,7 @@ El propósito principal es fomentar el consumo de proximidad y la transparencia 
 * `script.js`: Lógica de programación para la funcionalidad del lado del cliente.
 * `/img`: Carpeta de recursos gráficos y fotografías de productos.
 
-## 🍎 Catálogo de Productos
+## Catálogo de Productos
 La plataforma gestiona una variedad de productos de temporada con las siguientes características comunes:
 * **Variedades locales:** Recuperación de especies tradicionales (como el tomate de ramallet).
 * **Cultivo Sostenible:** Productos 100% naturales madurados al sol.
