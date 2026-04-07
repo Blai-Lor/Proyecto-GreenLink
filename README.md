@@ -18,7 +18,7 @@ El propósito principal es fomentar el consumo de proximidad y la transparencia 
 * **JavaScript (ES6+):** Implementación de interactividad, validación de formularios y gestión dinámica del carrito de compras.
 * **Recursos multimedia:** Optimización de imágenes y uso de IFrames para contenido externo.
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 * `index.html`: Página principal con información corporativa y productos destacados.
 * `producto.html`: Plantilla de detalle técnico de producto, ficha del agricultor y control de compra.
 * `quienes-somos.html`: Sección institucional con la misión, problemáticas e integración con el Pacto Verde Europeo.
