@@ -12,7 +12,7 @@ El propósito principal es fomentar el consumo de proximidad y la transparencia 
 * Conocer las instalaciones del productor mediante galerías de fotos verificadas.
 * Apoyar la economía circular y reducir la huella de carbono.
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 * **HTML5:** Estructura semántica de la plataforma.
 * **CSS3:** Diseño responsivo, uso de Flexbox y Grid Layout.
 * **JavaScript (ES6+):** Implementación de interactividad, validación de formularios y gestión dinámica del carrito de compras.
