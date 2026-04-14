@@ -6,6 +6,8 @@
     <title>GreenLink - Registro</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header>
@@ -16,14 +18,44 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="producto.html">Productos</a></li>
                     <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                    <li><a href="login.html" class="pestañaSeleccionada">Login</a></li>
+                    <li><a href="login.html" id="textoIniciadoHeader" class="pestañaSeleccionada">Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Secciones Registro -->
-    
+    <section class="zonaRegistro">
+        <div class="registro">
+            <div class="registroInformacion" id="formularioRegistro">
+                <h1>Iniciar Sesión</h1>
+
+                <p id="mensajeError" class="mensajeError"></p> <!-- Mensaje de error -->
+
+                <label>Nombre de usuario:
+                    <input type="text" id="name" name="nombre" placeholder="Tu usuario" required>
+                </label>
+
+                <label>Contraseña:
+                    <input type="password" id="password" name="contraseña" placeholder="Tu contraseña" required>
+                </label>
+
+                <ul id="errorPassword" class="listaValidaciones"></ul> <!-- Validacion de la contraseña -->
+
+                <p class="ayudaPassword">Requisitos: 6-12 caracteres, una mayúscula, una minúscula y un número.</p> <!-- Ayuda de contraseña -->
+
+                <a id="botonRegistro" class="botonRegistro" role="button" tabindex="0">Login</a> <!-- Boton de Login -->
+            </div>
+
+            <!-- Al iniciar session aparece esto -->
+            <div class="registroInformacion" id="seccionSesionIniciada" style="display: none;">
+                <h1>¡Sesión iniciada!</h1>
+                <p>Bienvenido/a: <strong id="nombreSesionIniciada"></strong></p>
+                <br>
+                <a id="botonCerrarSesion" class="botonProductos" role="button" tabindex="0">Cerrar Sesión</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="seccionesInfo">
             <div class="footers">
@@ -31,20 +63,11 @@
                     <h4>GreenLink</h4>
                     <p>Comunicación directa para comprar o vender productos locales.</p>
                 </div>
-                
-                <div class="seccionesFooter">
-                    <h4>Más Información</h4>
-                        <p>Términos y Condiciones</p>
-                        <p>Política de Privacidad</p>
-                </div>
-                
                 <div class="seccionesFooter">
                     <h4>Suscripción Agricultor</h4>
                     <p>Desde 4,99€/mes. <strong>¡3 meses gratis!</strong></p>
-                    <p>Anual: 50,99€</p>
                 </div>
             </div>
-            
             <div class="footerCopys">
                 <p>&copy; 2026 GreenLink - ¡Conéctate a un mundo más verde!</p>
             </div>
