@@ -52,3 +52,53 @@ document.addEventListener('DOMContentLoaded', function () {
         mostrarSesionIniciada(); //Esconde el formulario del registro
     });
 
+    //Esta es la funcion de validacion de la contraseña
+    function validarPassword(password) {
+        const errors = [];
+        if (password.length < 6 || password.length > 12) { //Tamaño de la contraseña
+            errors.push('Debe tener entre 6 y 12 caracteres.');
+        }
+        if (!/[A-Z]/.test(password)) { //Mayusculas
+            errors.push('Debe tener al menos una letra mayúscula.');
+        }
+        if (!/[a-z]/.test(password)) { //Minusculas
+            errors.push('Debe tener al menos una letra minúscula.');
+        }
+        if (!/[0-9]/.test(password)) { //Numeros
+            errors.push('Debe tener al menos un número.');
+        }
+
+        errorPasswordList.innerHTML = ''; //Limpia errores
+        errors.forEach(function (msg) { //Contiene los mensajes de los requisitos no cumplidos
+            const li = document.createElement('li'); //Crea un nuevo elemento de lista <li>
+            li.textContent = msg; //Asigna el texto del error al elemento
+            errorPasswordList.appendChild(li); //Enseña el error
+        });
+
+        return errors.length > 0; //true si hay errores >0 y false si no los hay
+    }
+
+    //Seccion sesion iniciada
+    function mostrarSesionIniciada() {
+        const formulario = document.getElementById('formularioRegistro');
+        const seccionSesionIniciada = document.getElementById('seccionSesionIniciada');
+        const nombreSesionIniciada = document.getElementById('nombreSesionIniciada');
+
+        formulario.style.display = 'none'; //Oculta el formulario
+        seccionSesionIniciada.style.display = 'block'; //Enseña mensaje de que se ha iniciado sesion
+        nombreSesionIniciada.textContent = sessionStorage.getItem('usuarioIniciado'); //Pone el nombre del usuario en el mensaje de bienvenida
+    }
+
+    //Boton cerrar sesion
+    const botonCerrar = document.getElementById('botonCerrarSesion');
+    if (botonCerrar) {
+        botonCerrar.addEventListener('click', function () {
+            sessionStorage.removeItem('usuarioIniciado'); //Borra los datos de la memoria
+            location.reload(); //Recarga para resetear la interfaz
+        });
+    }
+
+    if (usuarioActivo) { //Si al cargar la pagina hay una sesion, muestra la bienvenida
+        mostrarSesionIniciada();
+    }
+});
