@@ -6,7 +6,7 @@
     <title>GreenLink - Registro</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -31,12 +31,12 @@
 
                 <p id="mensajeError" class="mensajeError"></p> <!-- Mensaje de error -->
 
-                <label>Nombre de usuario:
-                    <input type="text" id="name" name="nombre" placeholder="Tu usuario" required>
+                <label>Nombre de Usuario:
+                    <input type="text" id="name" name="nombre" placeholder="Usuario" required>
                 </label>
 
                 <label>Contraseña:
-                    <input type="password" id="password" name="contraseña" placeholder="Tu contraseña" required>
+                    <input type="password" id="password" name="contraseña" placeholder="Contraseña" required> <!-- Contraseña oculta -->
                 </label>
 
                 <ul id="errorPassword" class="listaValidaciones"></ul> <!-- Validacion de la contraseña -->
@@ -46,7 +46,15 @@
                 <a id="botonRegistro" class="botonRegistro" role="button" tabindex="0">Login</a> <!-- Boton de Login -->
             </div>
 
-            >
+            <!-- Al iniciar session aparece esto -->
+            <div class="registroInformacion" id="seccionSesionIniciada" style="display: none;">
+                <h1>¡Sesión iniciada!</h1>
+                <p>Bienvenido/a: <strong id="nombreSesionIniciada"></strong></p>
+                <br>
+                <a id="botonCerrarSesion" class="botonProductos" role="button" tabindex="0">Cerrar Sesión</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="seccionesInfo">
