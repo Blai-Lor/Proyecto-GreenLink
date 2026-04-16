@@ -170,7 +170,7 @@ footer {
 .infoProductos {
     padding: 15px;
 }
-/* Texto pequeño en mayúsculas y verde para saber el tipo de producto que es */
+/* Texto pequeño en mayusculas y verde para saber el tipo de producto que es */
 .filtro {
     color: #2d5a3d;
     font-size: 12px;
@@ -193,7 +193,7 @@ footer {
     color: #333;
     border-radius: 4px;
 }
-/* Flexbox para separar la imagen del producto y su descripción en dos columnas */
+/* Flexbox para separar la imagen del producto y su descripcion en dos columnas */
 .detalle-flex {
     display: flex;
     gap: 40px;
@@ -296,7 +296,7 @@ footer {
     font-size: 1.8rem;
 }
 
-/* Centra la caja del formulario en la página */
+/* Centra la caja del formulario en la pagina */
 .zonaRegistro {
     display: flex;
     justify-content: center;
