@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
             errorPasswordList.appendChild(li); //Enseña el error
         });
 
-        return errors.length > 0; //true si hay errores >0 y false si no los hay
+        return errors.length > 0; //True si hay errores >0 y false si no los hay
     }
 
     //Seccion sesion iniciada
