@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLink - Inicio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
-
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,7 +17,14 @@
                     <li><a href="index.html" class="pestañaSeleccionada">Inicio</a></li>
                     <li><a href="producto.html">Productos</a></li>
                     <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                    <li><a href="login.html" id="textoIniciadoHeader">Login</a></li>
+                    <li><a href="login.html" id="nomUsuariHeader">Login</a></li>
+                    <li><a href="carrito.html">🛒 Cesta</a></li>
+                    <li><select class="cambioIdioma" title="idioma"> 
+                        <option value="es">ES</option>
+                        <option value="ca">CA</option>
+                        <option value="en">EN</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -41,27 +47,14 @@
                 <p>Pon a vender tus productos ahora.</p>
                 <p>Suscripción: 4,99€/mes o 50,99€/año.</p>
                 <p><strong>¡Aprovecha 3 meses de suscripción gratuita para nuevos usuarios!</strong></p>
-                <button class="botonRegistro">Registrarme como agricultor</button>
+                <a href="login.html" class="botonRegistro">Registrarme como agricultor</a>
             </div>
         </div>
     </section>
 
     <main class="seccionesInfo">
-
         <h2 class="tituloProductos">Productos destacados</h2> <!-- Aqui apareceran algunos productos -->
-        <div class="gridProductos"> 
-            <article class="productosPorSeparado">
-                <img src="img/Tomates.png" alt="Tomates">
-                <div class="infoProductos">
-                    <span class="filtro">Verduras</span>
-                    <h3>Tomates.</h3>
-                    <p>📍 Reus - Tarragona</p>
-                    <p class="precio">2,10€ / 500g</p>
-                    <a href="producto.html" class="botonDetalle">Ver detalles</a>
-                </div>
-            </article>
-        </div>
-
+        <div class="gridProductos" id="productosAñade"></div>
     </main>
     
     <footer>
