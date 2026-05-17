@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLink - Productos</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,41 +17,23 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="producto.html" class="pestañaSeleccionada">Productos</a></li>
                     <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                    <li><a href="login.html" id="textoIniciadoHeader">Login</a></li>
+                    <li><a href="login.html" id="nomUsuariHeader">Login</a></li>
+                    <li><a href="carrito.html">🛒 Cesta</a></li>
+                    <li><select class="cambioIdioma" title="idioma"> 
+                        <option value="es">ES</option>
+                        <option value="ca">CA</option>
+                        <option value="en">EN</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Muestra todos los productos que hay con su inforacion -->
     <main class="seccionesInfo">
-
-        <div class="detalle-flex">
-            
-            <div class="col-imagen">
-                <img src="img/Tomates.png" alt="Tomates">
-            </div>
-
-            <div class="col-info">
-                <span class="filtro">Bio</span>
-                <h1>Tomates de temporada</h1>
-                <p class="precio-Y-cantidad">2,10€ / 500g</p>
-                
-                <p class="descripcion-producto">Tomates auténticos madurados al sol del mediterraneo. Sabor auténtico y natural. 
-                    Incluye fotos de la finca del agricultor para garantizar su origen directo.</p>
-
-                <div class="informacion-agricultor">
-                    <h3>Agricultor: Andrés Palomino</h3>
-                    <p>📍 Reus - Tarragona</p>
-                    <p>⭐⭐⭐⭐⭐ (4.4 valoración)</p>
-                </div>
-
-                <div class="controles-compra">
-                    <input type="number" value="1" min="1" class="cantidad-cesta">
-                    <button class="botonProductos">🛒 Añadir a la cesta</button>
-                </div>
-            </div>
-        </div>
-
+        <h1 class="tituloProductos">Nuestros Productos</h1>
+        <div id="contenedorProductosPagina" class="gridProductos"></div>
     </main>
 
     <footer>
