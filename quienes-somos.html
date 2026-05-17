@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLink - ¿Quienes Somos?</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,7 +17,14 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="producto.html">Productos</a></li>
                     <li><a href="quienes-somos.html" class="pestañaSeleccionada">Quiénes somos</a></li>
-                    <li><a href="login.html" id="textoIniciadoHeader">Login</a></li>
+                    <li><a href="login.html" id="nomUsuariHeader">Login</a></li>
+                    <li><a href="carrito.html">🛒 Cesta</a></li>
+                    <li><select class="cambioIdioma" title="idioma"> 
+                        <option value="es">ES</option>
+                        <option value="ca">CA</option>
+                        <option value="en">EN</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +32,7 @@
 
     <main class="seccionesInfo">
     
-    <section class="zona-quienes-somos"> <!-- Informacion de quienes somos (GreenLink) -->
+    <section class="zona-quienes-somos"> <!-- Informacion de quienes somos -->
         <div class="info-quienes-somos"> 
             <div class="descripcion-quienes-somos">
                 <h1>¿Quiénes somos?</h1>
@@ -43,7 +49,7 @@
         </div>
     </section>
 
-    <section class="zona-problemas"> <!-- Los 3 problemas que resuelve GreenLink -->
+    <section class="zona-problemas"> <!-- Els 3 problemes que resuelve GreenLink -->
         <h2>¿Qué problemas resolvemos?</h2>
         <div class="problema-grid">
             <div class="problemas-totales">
@@ -69,19 +75,42 @@
     </section>
 
 
-        
     <!-- Zona Pacto Verde Europeo -->
-    <!--
     <section class="pacto-verde">
-        <div class="casilla-pacto">
-            <h2>Compromiso con el Pacto Verde Europeo</h2>
+    <div class="casilla-pacto">
+        <h2>Compromiso con el Pacto Verde Europeo</h2>
             <p>En <strong>GreenLink</strong>, nuestra misión se alinea con la estrategia <em>"De la Granja a la Mesa"</em> del Pacto Verde Europeo. Trabajamos para crear un 
             sistema alimentario justo, saludable y respetuoso con el medio ambiente.</p>
 
-    </section>
-    -->
+        <div class="seccionPacto">
 
-        
+            <div class="casillas-pacto">
+                <img src="img/Montaña.png" alt="Economía circular">
+                <div class="texto-pacto">
+                    <h3>1. Fomento de la economía circular y la reducción de intermediarios</h3>
+                    <p>Promueve la sostenibilidad económica y el apoyo a las economías locales. GreenLink facilita la compra directa de productos agrícolas, eliminando intermediarios, lo cual reduce los costes para los consumidores y aumenta la rentabilidad de los agricultores locales. Este modelo de economía circular permite a los productores obtener un beneficio más grande, favoreciendo la sostenibilidad económica del sector agrícola.</p>
+                </div>
+            </div>
+
+            <div class="casillas-pacto">
+                <img src="img/Frutas-Verduras.png" alt="Alimentos sostenibles">
+                <div class="texto-pacto">
+                    <h3>2. Acceso a alimentos sostenibles y frescos</h3>
+                    <p>La plataforma de GreenLink alienta las familias a consumir alimentos frescos y saludables de fuentes locales, lo cual disminuye la necesidad de importar productos y contribuye a la reducción de la huella de carbono, un objetivo fundamental del Pacto Verde Europeo. Además, el consumo local minimiza el transporte y, por lo tanto, las emisiones de gases de efecto invernadero.</p>
+                </div>
+            </div>
+
+            <div class="casillas-pacto">
+                <img src="img/Trato.png" alt="Transparencia">
+                <div class="texto-pacto">
+                    <h3>3. Creación de un sistema de confianza y transparencia</h3>
+                    <p>El Pacto Verd promueve la sostenibilidad y la transparencia en la producción. La plataforma de GreenLink permite a los agricultores mostrar imágenes de sus instalaciones y compartir detalles de sus productos, creando así un sistema de confianza entre productores y consumidores. Este enfoque en la transparencia fomenta un consumo informado, alineado con los valores del Pacto Verde Europeo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     </main>
 
     <footer>
